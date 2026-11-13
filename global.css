@@ -1,0 +1,68 @@
+body {
+    font: 100%/1.5 system-ui, sans-serif;
+
+    display: flex;
+    flex-flow: column;
+
+    max-width: 80em;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    margin: auto;
+    padding: 1em;
+
+    background: #f8fafc;
+    color: #172033;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    gap: 2em;
+
+    margin-bottom: 1em;
+}
+
+header h1 {
+    margin-bottom: 0.2em;
+}
+
+header p {
+    margin-top: 0;
+    color: #64748b;
+}
+
+.time-filter {
+    margin-left: auto;
+    min-width: 18em;
+}
+
+.time-filter input {
+    width: 100%;
+}
+
+#selected-time,
+#any-time {
+    display: block;
+}
+
+#selected-time {
+    font-weight: bold;
+}
+
+#any-time {
+    color: #64748b;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .time-filter {
+        width: 100%;
+        margin-left: 0;
+    }
+}
